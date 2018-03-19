@@ -4,25 +4,23 @@
   border: 0;
   outline: 0;
   font-size: 100%;
+  text-decoration: none;
 }
 body{
-  background-color: #F0F7EE
+  background-color: #F1FAEE
 }
 
-header {
-  height: 75px;
 
-}
-footer {
+/* footer {
   position: absolute;
   height: 75px;
   width: 100%;
   bottom: 0px;
-}
+} */
 
 section{
   display: flex;
-  height: calc(100vh - 150px)
+  height: 100vh
 }
 .nav{
   /* display: flex; */
@@ -30,7 +28,7 @@ section{
   flex: 0 0 25%;
   align-items: center;
   justify-content: center;
-  background-color: #5D737E
+  background-color: #A8DADC
 }
 
 .nav-wrap{
@@ -44,26 +42,44 @@ section{
   vertical-align: middle;
   justify-content: center;
   margin-bottom: 30px;
-  font-size: 22px;
+  font-size: 28px;
+  color: #E63946
 }
 
 .nav-list a:hover {
-  border-bottom: 2px solid #36454f ;
-  font-size: 24px;
+  border-bottom: 2px solid #1D3557;
+  font-size: 34px;
 }
 
 #zero{
   font-size: 22px;
 }
 
+.social {
+  margin:  0 auto;
+  display: flex;
+  list-style-type: none;
+}
+
+.social li {
+  align-self: center;
+  margin: 20px 20px 20px 0;
+}
+
+
+.social-links {
+  color: #E63946;
+}
+
 .pic{
   height: 260px;
-  width: 70%;
+  width: 245px;
   border-radius: 50%;
-  margin: 15px auto 25px;
+  margin: 35px auto 25px;
   background-image: url("image.png");
   background-size: cover;
 }
+
 
 .main-content{
   border-left: 1px solid;
@@ -91,8 +107,9 @@ section{
 
 .bio{
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.8em;
+  color: #1D3557
 }
 
 .project-wrap{
@@ -108,6 +125,7 @@ section{
 .project-about{
   margin-top: 10px;
   font-size: 20px;
+  color: #1D3557;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.8em;
 }
@@ -115,6 +133,7 @@ section{
 .project-title{
   margin-top: 10px;
   font-size: 30px;
+  color: #1D3557;
   text-align: center;
   font-family: 'Rubik', sans-serif;
   line-height: 1.8em;
@@ -150,6 +169,7 @@ section{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  color: #457B9D
 }
 
 .contactInfo{
@@ -167,10 +187,14 @@ section{
   .pic{
     display: none;
   }
-  footer{
-    border-top-style: solid;
-    border-top-width: thin;
-    border-top-color: #8c99a3
+  .pic2{
+      height: 260px;
+      width: 245px;
+      border-radius: 50%;
+      margin: 25px auto 25px;
+      background-image: url("image.png");
+      background-size: cover;
+  
   }
   section{
     height: calc(100vh -25px);
@@ -195,16 +219,25 @@ section{
   }
   .nav-list a:click {
     border-bottom: 2px solid #36454f ;
-    font-size: 24px;
+    font-size: 26px;
+  }
+  .nav-list a:hover {
+    border-bottom: 2px solid #36454f ;
+    font-size: 26px;
   }
   .nav-list li {
     flex: 1 0 auto;
+    font-size: 22px;
     align-self: flex-end;
   }
   
   .landingBio{
     margin-top: 10px;
     flex-direction: column;
+  }
+
+  .bio{
+    font-size: 22px;
   }
 
   .project-wrap{
